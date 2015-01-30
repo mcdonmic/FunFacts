@@ -13,7 +13,7 @@ public class FunFactsActivity extends Activity {
     public static final String TAG = FunFactsActivity.class.getSimpleName();
 
     private FactBook mFactBook = new FactBook();
-    private ColorWheel freshColor = new ColorWheel();
+    private ColorSelectionWheel freshColor = new ColorSelectionWheel();
 
     /*
     The next method is created by the IDE.  I sure wish I knew what setContentView() meant.

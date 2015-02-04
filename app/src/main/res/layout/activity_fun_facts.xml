@@ -2,15 +2,16 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/padding"
+    android:id="@+id/Layout"
     tools:context=".FunFactsActivity"
-    android:background="#51b46d">
+    android:background="#ff387bb4">
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Did you know?"
-        android:id="@+id/layoTxtLbl_TopStaticLabel"
+        android:id="@+id/layoutTxtLbl_TopStaticLabel"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -21,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ant&apos;s stretch when they wake up in the morning."
-        android:id="@+id/layoTxtLbl_FunFact"
+        android:id="@+id/layoutTxtLbl_FunFact"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -32,8 +33,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Show a new Fun Fact"
-        android:id="@+id/layoBtn_ShowNewFunFact"
+        android:id="@+id/layoutBtn_ShowNewFunFact"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:background="@android:color/white" />
+        android:background="@android:color/white"
+        android:textColor="#ff387bb4" />
 </RelativeLayout>

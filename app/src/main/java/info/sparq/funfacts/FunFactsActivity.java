@@ -6,14 +6,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.graphics.Color;
-
+import android.util.Log;
 
 public class FunFactsActivity extends Activity {
+/*
 
-    public static final String TAG = FunFactsActivity.class.getSimpleName();
     private FactBook mFactBook = new FactBook();
     private ColorSelectionWheel freshColor = new ColorSelectionWheel();
-
+    public static final String TAG = FunFactsActivity.class.getSimpleName();
+*/
     /*
     The next method is created by the IDE.  I sure wish I knew what setContentView() meant...
 
@@ -25,6 +26,11 @@ public class FunFactsActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        final FactBook mFactBook = new FactBook();
+        ColorSelectionWheel freshColor = new ColorSelectionWheel();
+        String TAG = FunFactsActivity.class.getSimpleName();
+
+
         setContentView(R.layout.activity_fun_facts);
         final View mBackground = findViewById(R.id.Layout);
         final ColorSelectionWheel mColorSelector = new ColorSelectionWheel();
@@ -63,5 +69,10 @@ public class FunFactsActivity extends Activity {
             }
         };
         btnShowFact.setOnClickListener(androidViewListener_Handy);
+
+        // Outside the OnClickListener declaration.  Back in the OnCreateMethod...
+        // Toast.makeText(this, "Yah! Our activity was created.",Toast.LENGTH_LONG).show;
+        Log.d(TAG,"Hello again. FunFactsActivity loaded successfully");
+
     }
 }

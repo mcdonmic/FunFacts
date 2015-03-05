@@ -11,25 +11,10 @@
             android:name=".FunFactsActivity"
             android:label="@string/app_name" >
             <intent-filter>
-
                 <!-- This is the code that marks this activity as launcher -->
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="."
-            android:label="@string/title_activity_color_wheel" >
-        </activity>
-        <activity
-            android:name=".FactBook"
-            android:label="@string/title_activity_fact_book" >
-        </activity>
-        <activity
-            android:name=".ColorSelectionWheel"
-            android:label="@string/title_activity_color_selection_wheel" >
-        </activity>
     </application>
-
 </manifest>

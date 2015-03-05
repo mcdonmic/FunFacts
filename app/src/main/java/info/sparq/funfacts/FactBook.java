@@ -19,21 +19,7 @@ public class FactBook {
     };
 
     public String makeFact() {
-
-        // Pick a random value
         int randValue = randGen.nextInt(facts.length);
-
-        // Update the Fun Fact.
-        // The following code works fine, is left here for learning, and is
-        // commented out to be replaced with array usage methods.
-
-                /*
-                if (randValue == 0) fact = "Ants stretch when they wake in the morning.";
-                else if (randValue ==1) fact = "Ostriches can run faster than horses.";
-                else if (randValue ==2) {
-                    fact = "Olympic gold metals are made mostly of silver.";
-                };
-                */
         return facts[randValue];
     }
 };
